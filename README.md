@@ -13,6 +13,9 @@
   - [The Current State of HTML5 Forms](https://www.wufoo.com/html5/)
   - [Using Geolocation on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation)
 
+### Touch Support
+  - [Add Touch to Your Site on Google Developers](https://developers.google.com/web/fundamentals/design-and-ux/input/touch/?hl=en#stateful-elements-respond-to-touch)
+
 ## Snippets:
 ### Input numbers validation example
 ```javascript
@@ -26,4 +29,15 @@
     rangeInput.onchange = function() {
         output.innerHTML = this.value;
     };
+```
+
+### Prevent text from being selected
+On mobile devices by long press on the screen
+```html
+  <style>
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  </style>
 ```
